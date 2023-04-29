@@ -1,0 +1,42 @@
+export const maxUserPhotosCount = 5;
+
+export const secondColumn = [
+  "fitnes",
+  "movie",
+  "musican",
+  "musican_instrument",
+  "alcohol",
+  "drugs",
+  "smoking",
+  "politic",
+  "binge",
+  "bio",
+  "thoughts",
+  "pets",
+  "driving",
+  "diet",
+  "religion",
+  "religous_practice",
+];
+
+export const thirdColumn = [
+  "sexual_orientation",
+  "gender",
+  "who_can_see",
+  "material_status",
+  "children",
+  "profession",
+  "position",
+  "income",
+  "hight",
+  "family_height",
+  "hair_color",
+  "hair_color_childhood",
+  "eye_color",
+  "family_eye_color",
+  "family_occuprions",
+  "family_dist",
+  "family_relationship",
+  "education_level",
+  "institution",
+];

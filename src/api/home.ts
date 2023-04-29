@@ -115,19 +115,3 @@ export interface IProfile {
   mutual_like?: boolean;
   viewed: boolean;
 }
-
-//Axios method for infinite scroll
-const getProfilesList = async (
-  token: string,
-  filters: { [key: string]: any }
-) => {
-  return await axiosInstance.get("home/profiles_list/", {
-    headers: {
-      //Authorization header
-      authorization: `Token ${token}`,
-      //Language header (localization)
-      "Accept-Language": localStorage.getItem("i18nextLng"),
-    },
-    params: convertFiltersData(filters),
-  });
-};
