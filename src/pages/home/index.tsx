@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Header } from "../../components/common";
 import { PageContent } from "../../UI/PageContent/PageContent";
-import { CandidateView, CandidatesView, FiltersView } from "../../views/HomeViews";
-import { useRouter } from "next/router";
+import { CandidatesView, FiltersView } from "../../views/HomeViews";
 
 const HeaderStyled = styled(Header)`
   position: relative;
@@ -19,9 +18,6 @@ const HomePage = React.memo(() => {
       <HeaderStyled />
       <FiltersView />
       <CandidatesView />
-      {/* <Routes>
-        <Route path="/:id" element={(<CandidateView />)} />
-      </Routes> */}
     </PageContent>
   );
 });

@@ -6,7 +6,7 @@ import React, {
   useState,
 } from "react";
 import styled from "styled-components";
-import avatar from "../../images/avatar.png";
+import avatar from "../../../public/images/avatar.png";
 import {
   FamilyIcon,
   ReadMessageIcon,
@@ -136,7 +136,7 @@ const MessageLoader = styled(Loader2)`
 `;
 
 interface IProps {
-  chatId: number;
+  chatId?: number;
 }
 
 const ChatView = React.memo(({ chatId }: IProps) => {
@@ -150,9 +150,11 @@ const ChatView = React.memo(({ chatId }: IProps) => {
 
   const { data: dialogs } = useChatGetDialogsQuery();
 
-  const { data: messages } = useChatGetMessagesQuery(chatId as number, {
+  const { data: messages, error } = useChatGetMessagesQuery(chatId as number, {
     skip: !chatId,
   });
+
+  console.log(error)
 
   const opponent = useMemo(() => {
     const dialog = dialogs?.find((d) => d.id === chatId);
