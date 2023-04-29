@@ -14,6 +14,7 @@ import { hostUrl } from "../../api";
 import { Loader2 } from "../../UI/Loader";
 import { useTranslation } from "react-i18next";
 import { useDropzone } from "react-dropzone";
+import Image from "next/image";
 
 const StyledWrapper = styled.div`
   margin-bottom: 20px;
@@ -74,7 +75,7 @@ const StyledRemoveBtn = styled.button`
   }
 `;
 
-const StyledImage = styled.img`
+const StyledImage = styled(Image)`
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -134,10 +135,10 @@ const UploadPhotosComponent = React.memo(() => {
         return;
       }
       images.forEach((photo, index) => {
-        let isMain = true
-        if(index !== 0) isMain = false
-        if(userPhotos?.length !== 0) isMain = false
-        uploadImage({ photo, is_main: isMain })
+        let isMain = true;
+        if (index !== 0) isMain = false;
+        if (userPhotos?.length !== 0) isMain = false;
+        uploadImage({ photo, is_main: isMain });
       });
     },
     [userPhotos, maxUserPhotosCount]
@@ -173,7 +174,12 @@ const UploadPhotosComponent = React.memo(() => {
                 >
                   <CrossIcon />
                 </StyledRemoveBtn>
-                <StyledImage src={`${hostUrl}${image.url}`} />
+                <StyledImage
+                  src={`${hostUrl}${image.url}`}
+                  width={170}
+                  height={150}
+                  alt="Image"
+                />
               </StyledBox>
             );
           })}

@@ -7,15 +7,15 @@ import {
   useProfileLikeMutation,
 } from "../../api/home";
 import { Loader2 } from "../../UI/Loader";
-import like from "../../images/like.png";
-import mutualLike from "../../images/mutual-like.png";
+import like from "../../../public/images/like.png";
+import mutualLike from "../../../public/images/mutual-like.png";
 import LikeMatchComponent from "./LikeMatchComponent";
 import { useSelector } from "react-redux";
 import {
-  homeAppliedFiltersSelector,
   homeFeedDataSelector,
 } from "../../store/home";
-import { useNavigate } from "react-router-dom";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 const StyledWrapper = styled.div`
   position: absolute;
@@ -81,7 +81,7 @@ interface IProps {
 }
 
 const CardActionsComponent = React.memo(({ profile, userId }: IProps) => {
-  const navigate = useNavigate();
+  const router = useRouter()
   const feed = useSelector(homeFeedDataSelector);
   const [likeCard, { isLoading: isLiking }] = useProfileLikeMutation();
   const [hideCard, { isLoading: isHiding }] = useProfileHideMutation();
@@ -93,11 +93,11 @@ const CardActionsComponent = React.memo(({ profile, userId }: IProps) => {
 
 
     if(nextProfile) {
-      navigate(`/home/${nextProfile.id}`)
+      router.push(`/home/${nextProfile.id}`)
       return
     }
-    navigate('/home/')
-  }, [userId, feed]);
+    router.push('/home/')
+  }, [userId, feed, router]);
 
 
   const handleLike = useCallback(
@@ -143,14 +143,14 @@ const CardActionsComponent = React.memo(({ profile, userId }: IProps) => {
           <Loader2 />
         ) : (
           <MainBtn onClick={() => handleLike(userId)} disabled={profile?.liked}>
-            <img
+            <Image
               src={profile?.mutual_like ? mutualLike : like}
               alt="Like icon"
             />
           </MainBtn>
         )}
 
-        <StyledBtn onClick={() => navigate(-1)}>
+        <StyledBtn onClick={() => router.back()}>
           <ChevronDownIcon />
         </StyledBtn>
       </StyledWrapper>

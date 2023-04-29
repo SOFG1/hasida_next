@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
@@ -15,6 +14,8 @@ import {
   SettingsActiveIcon,
   SettingsIcon,
 } from "../../UI/SVG";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface IMenuItem {
   name: string;
@@ -99,7 +100,7 @@ const StyledMenu = styled.div<{ opened: boolean }>`
 `;
 
 //We escaped boolean attribute in order to avoid console error: non-boolean attribute...
-const MenuItem = styled(NavLink)<{
+const MenuItem = styled(Link)<{
   order: string;
   active: number;
 }>`
@@ -164,7 +165,7 @@ const MenuItemName = styled.p`
 `;
 
 const Menu = React.memo(() => {
-  const { pathname } = useLocation();
+  const { pathname } = useRouter();
   const menu = useMenu();
   const [opened, setOpened] = useState<boolean>(true);
 
@@ -178,7 +179,7 @@ const Menu = React.memo(() => {
           <MenuItem
             active={isActive ? 1 : 0}
             key={item.path}
-            to={item.path}
+            href={item.path}
             order={isActive ? item.activeOrder : item.order}
             onClick={(e: any) => e.stopPropagation()}
           >

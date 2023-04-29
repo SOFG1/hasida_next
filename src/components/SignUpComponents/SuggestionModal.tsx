@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../../UI/Button";
 import { Modal } from "../../UI/Modal";
 import { Radio } from "../../UI/Radio";
+import { useRouter } from "next/router";
 
 const StyledContent = styled.div`
   text-align: center;
@@ -42,11 +42,11 @@ interface IProps {
 
 const SuggestionModal = React.memo(({show, onClose}: IProps) => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
+  const router = useRouter();
   const [checked, setChecked] = useState<boolean>(true);
 
   const handleClick = useCallback(() => {
-    navigate( checked ? "/sign-up/3/0" :"/home");
+    router.push( checked ? "/sign-up/3/0" :"/home");
     onClose();
   }, [checked]);
 

@@ -4,9 +4,10 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import styled from "styled-components";
-import avatar from "../../images/avatar.png";
+import avatar from "../../../public/images/avatar.png";
 import { UserPhotoType } from "../../api/user";
 import { hostUrl } from "../../api";
+import Image from "next/image";
 
 const StyledWrapper = styled.div<{ opened: boolean }>`
   height: 100%;
@@ -40,7 +41,7 @@ const StyledWrapper = styled.div<{ opened: boolean }>`
   }
 `;
 
-const StyledImg = styled.img`
+const StyledImg = styled(Image)`
   object-fit: cover;
   height: 100%;
   width: 100%;

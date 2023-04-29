@@ -1,9 +1,8 @@
 import i18next from "i18next";
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { ChevronDownIcon, GlobeIcon } from "../../UI/SVG";
-import { useDispatch } from "react-redux";
 
 const StyledWrapper = styled.div`
   position: relative;

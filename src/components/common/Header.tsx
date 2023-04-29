@@ -1,7 +1,6 @@
 import React, { useCallback, useMemo } from "react";
 import styled from "styled-components";
 import HeaderLogo from "../../images/header-logo.png";
-import { useLocation, useNavigate } from "react-router-dom";
 import {
   ChevronLeftIcon,
   InfoCircleIcon,
@@ -14,6 +13,8 @@ import { resetUserSlice, userTokenSelector } from "../../store/user";
 import { resetAppSlice } from "../../store/app";
 import { resetDashboardSlice } from "../../store/dashboard";
 import { resetHomeSlice } from "../../store/home";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -43,7 +44,7 @@ const StyledLink = styled.a`
   cursor: pointer;
 `;
 
-const StyledLogo = styled.img`
+const StyledLogo = styled(Image)`
   height: 52px;
   width: 170px;
   object-fit: contain;
@@ -78,8 +79,7 @@ interface IProps {
 }
 const Header = React.memo(({ className }: IProps) => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const router = useRouter();
   const isAuthorized = useSelector(userTokenSelector);
 
   const showBackwardBtn = useMemo(() => {
@@ -97,13 +97,18 @@ const Header = React.memo(({ className }: IProps) => {
     <StyledWrapper className={className}>
       <Inner>
         {showBackwardBtn ? (
-          <BackBtn onClick={() => navigate(-1)}>
+          <BackBtn onClick={() => router.back()}>
             <ChevronLeftIcon />
           </BackBtn>
         ) : (
           <span></span>
         )}
-        <StyledLogo src={HeaderLogo} alt="Header Logo" />
+        <StyledLogo
+          src={HeaderLogo}
+          height={52}
+          width={170}
+          alt="Header Logo"
+        />
         <StyledBox>
           {isAuthorized && (
             <LogoutBtn onClick={handleLogout} title="Logout">

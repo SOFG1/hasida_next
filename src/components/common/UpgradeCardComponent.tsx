@@ -1,9 +1,8 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { Button } from "../../UI/Button";
-import { PlusIcon } from "../../UI/SVG";
-import { ITariff, usePayTariffMutation } from "../../api/settings";
+import { ITariff } from "../../api/settings";
 
 const StyledCard = styled.div<{ sm?: boolean }>`
   padding: 42px 17px 41px;
