@@ -46,7 +46,7 @@ const SuggestionModal = React.memo(({show, onClose}: IProps) => {
   const [checked, setChecked] = useState<boolean>(true);
 
   const handleClick = useCallback(() => {
-    router.push( checked ? "/sign-up/3/0" :"/home");
+    router.push( checked ? "/sign-up/3" :"/home");
     onClose();
   }, [checked]);
 

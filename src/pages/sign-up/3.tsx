@@ -82,7 +82,7 @@ const SignUpStep3 = React.memo(() => {
   const Step3Fields = useMemo(() => {
     return fields?.filter((f) => f.is_registration)
       .filter((f) => f.step === 3)
-      .slice(order, order + 3) || []
+      .slice(order, order + 3)
   }, [fields, order]);
 
 
@@ -99,7 +99,7 @@ const SignUpStep3 = React.memo(() => {
 
 
   useEffect(() => {
-    if(Step3Fields.length === 0 && fields) {
+    if(Step3Fields?.length === 0 && fields) {
         router.push("/home");
     }
   }, [Step3Fields, fields, router])
@@ -111,7 +111,7 @@ const SignUpStep3 = React.memo(() => {
     editProfile(requestData)
         .unwrap()
         .then(() => {
-          router.push(`/sign-up/3/${order + 3}`)
+          router.push(`/sign-up/3`)
           setOrder(p => p + 3)
         });
   }, [formData, editProfile, order, router]);
@@ -139,7 +139,7 @@ const SignUpStep3 = React.memo(() => {
             <SignUpSteps activeStep="3" />
             <StyledProgressTitle>{t("sign-up_progress")}</StyledProgressTitle>
             <ProgressBar compleetness={compleetness} />
-            {Step3Fields.map((f, index) => (
+            {Step3Fields?.map((f, index) => (
               <FieldInputComponent
                 field={f}
                 value={formData[f.name]}

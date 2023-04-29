@@ -174,7 +174,7 @@ const CandidateCard = React.memo(({ profile, index }: IProps) => {
             <StyledLabel>Last view:</StyledLabel>
             <StyledLastView>{lastSeen}</StyledLastView>
           </PaddingBox>
-          <OpenBtn onClick={() => router.push(String(profile.id))}>
+          <OpenBtn onClick={() => router.push(`/home/${profile.id}`)}>
             <InfoIcon />
           </OpenBtn>
         </StyledInfo>

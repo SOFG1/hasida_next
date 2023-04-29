@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 
 const StyledWrapper = styled.div`
   position: relative;
-  background-image: url(${backgroundImg});
+  background-image: url(${backgroundImg.src});
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -123,7 +123,7 @@ const SignUpStep1 = React.memo(() => {
   }, [agreed]);
 
   useEffect(() => {
-    if (token) router.push("2");
+    if (token) router.push("/sign-up/2");
   }, [token]);
 
   //Show alert initial
