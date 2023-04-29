@@ -1,9 +1,9 @@
 import React, { useCallback, useMemo } from "react";
-import CountryList from "country-list-with-dial-code-and-flag";
 import styled from "styled-components";
 import { Dropdown } from "../../UI/Dropdown";
 import { Input } from "../../UI/Input";
 import { useTranslation } from "react-i18next";
+import { dialCodes } from "@/constants";
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -49,10 +49,11 @@ interface IProps {
   hint?: string
 }
 
+
 const MobilePhoneInput = React.memo(({ label, value, onChange, hint }: IProps) => {
   const { t } = useTranslation();
   const options = useMemo(() => {
-    return CountryList.getAll().map((c) => ({
+    return dialCodes.map((c) => ({
       label: `(${c.dial_code}) ${c.name}`,
       value: c.dial_code,
     }));

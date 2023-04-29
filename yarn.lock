@@ -858,11 +858,6 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-country-list-with-dial-code-and-flag@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/country-list-with-dial-code-and-flag/-/country-list-with-dial-code-and-flag-5.0.1.tgz#3b0b05f570436b229b90aa43e6acf67c01818866"
-  integrity sha512-Aj5HCkcy2uqQGYO6Ja+d2nhahXewYYde4s1/cnfjbpM0+I2WyH/A27UIilcxLQHcw5GR1cjNBzwvE8unOZNBkA==
-
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"

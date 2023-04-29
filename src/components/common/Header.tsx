@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from "react";
 import styled from "styled-components";
-import HeaderLogo from "../../images/header-logo.png";
+import HeaderLogo from "../../../public/images/header-logo.png";
 import {
   ChevronLeftIcon,
   InfoCircleIcon,
