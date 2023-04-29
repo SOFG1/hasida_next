@@ -1,0 +1,137 @@
+{
+    "sign-in_title": "ברוכים הבאים",
+    "sign-in_desc": "מטרתנו היא לעזור לאנשים למצוא שותף/פה להורות משותפת",
+    "sign-in_email-label": "אימייל",
+    "sign-in_pass-label": "סיסמה",
+    "sign-in_sign-in": "התחבר",
+    "sign-in_no-account": "אין לך חשבון?",
+    "sign-in_sign-up": "הרשם",
+    "sign-in_forgot-pass": "שכחתי סיסמה",
+    "sign-in_quick": "התחברות מהירה",
+    "forgot-pass_title": "האם שכחת סיסמה?",
+    "forgot-pass_text": "הקלד כתובת אימייל",
+    "forgot-pass_btn": "בצע",
+    "forgot-pass_success": "סיסמה נשלחה לאימייל שלך",
+    "forgot-pass_error": "קרתה שגיאה",
+
+    "sign-up_title": "הרשם",
+    "sign-up_progress": "התקדמות",
+    "sign-up_step1": "שלב 1",
+    "sign-up_step1-alert": "ברוך הבא לאפליקצית החסידה. את/ה במרחק 2 דק מהצצה באתר. הרשם עכשיו ותוכל להציץ בפרופילים של המשתמשים האחרים",
+    "sign-up_step2": "שלב 2",
+    "sign-up_step3": "שלב 3",
+    "sign-up_email-label": "אימייל",
+    "sign-up_pass-label": "סיסמה",
+    "sign-up_pass-rpt-label": "חזור על סיסמה",
+    "sign-up_phone-label": "טלפון סלולרי",
+    "sign-up_next": "שלב הבא",
+    "sign-up_have-acc": "האם יש לך חשבון?",
+    "sign-up_sign-in": "התחבר",
+    "sign-up_warning": "האתר עוסק בהורות משותפת מבחירה: מודל משפחתי בו ההורים לוקחים אחריות משותפת על גידול וחינוך ילדיהם ללא קשר זוגי רומנטי ביניהם, ובמשקי בית נפרדים. מי שישתמש בו לצורך אחר, עלול להיות מושעה.",
+    "sign-up_warning-submit": "שלח",
+    "sign-up_email-confirm": " הודעת אישור נשלחה לכתובת האימייל שלך",
+    "sign-up_email-success": "אישרת את כתובת האימייל שלך",
+    "sign-up_email-error": "קרתה שגיאה בזמן אישור האימייל",
+
+
+    "sign-up2_suggestion": "האם תרצה להשלים את הפרופיל שלך עכשיו?",
+    "sign-up2_suggestion-text": "זה ייקח רק 5-10 דקות",
+    "sign-up2_suggestion-yes": "כן",
+    "sign-up2_suggestion-no": "לא, אני אשלים אותו אחר כך",
+    "sign-up2_suggestion-next": "שלב הבא",
+    "sign-up2_subtitle": "מידע כללי",
+    "sign-up2_images-label": "ניתן להעלות עד 4 תמונות",
+    "sign-up2_privacy": "אני מסכים <span>Privacy policy</span> of Nesting",
+
+    "menu_dashboard": "לוח מחוונים",
+    "menu_settings": "הגדרות",
+    "menu_home": "עמוד הבית",
+    "menu_account": "חשבון",
+    "menu_chat": "צ'אט",
+
+    "filters_title": "סינון",
+    "filters_apply": "בצע",
+    
+    "account_title": "פרופיל",
+    "account_logout": "התנתק",
+    "account_add-photo": "הוסף תמונה",
+    "account_add-photo-more": "הוסף עד 4 תמונות לפרופיל שלך",
+    "account_info-percent": "% המידע שהוסף",
+    "account_info-save": "שמור",
+    "account_info-edit": "עריכת הפרופיל",
+    "account_column1": "Technical information:",
+    "account_column2": "Personal interests:",
+    "account_column3": "Personal information:",
+    "account_membership": "חברות:",
+    "account_membership-silver": "כסף",
+    "account_membership-gold": "זהב",
+    "account_membership-platinum": "פלטנום",
+    "account_membership-upgrade": "שדרג",
+    "upgrade_membership": "חברות:",
+    "upgrade_title": "שדרג",
+    "upgrade_text": "שדרג את סוג החברות שלך כדי לקבל גישה ליותר פיצ'רים",
+    "upgrade_upgrade-btn": "שדרג",
+
+    "like-match_title": "יש לך התאמה!",
+    "like-match_text": "ניתן לשלוח הודעה או להמשיך להסתכל",
+    "like-match_btn": "שלח הודעה",
+    "like-match_continue": "המשך",
+
+    
+
+    "dashboard_title": "לוח מחוונים",
+    "dashboard_period": "תקופה:",
+    "dashboard_selected-period": "{{ימים}} הימים האחרונים",
+    "dashboard_search": "הצג בחיפוש",
+    "dashboard_activity": "הפעילות שלי",
+    "dashboard_searches": "חיפושים:",
+    "dashboard_likes": "עשיתי לייק:",
+    "dashboard_i-saw": "ראיתי:",
+    "dashboard_liked_me": "מי עשה לי לייק",
+    "dashboard_viewers": "מי הסתכל בפרופיל שלי (אבל לא עשה לי לייק)",
+    "dashboard_i_liked": "למי עשיתי לייק",
+    "dashboard_likes_matches": "התאמות",
+    "dashboard_i_viewer": "מי ראיתי",
+    "dashboard_all": "הכל",
+    "dashboard_open": "פתח",
+    "dashboard_write": "כתוב",
+    "dashboard_days": "ימים",
+
+    "home_no-items-title": "לא הצלחנו למצוא משהו באזור שלך",
+    "home_no-items-text": "היי! עדיין לא מצאנו מישהו באזור שלך. אבל ניתן לשנות את האזור בסינון",
+    "home_no-items-btn": "סינון",
+
+    "height-inch": "אינץ",
+    "height-cm": "ס'מ",
+
+    "field-email": "אימייל",
+    "field-yes": "כן",
+    "field-no": "לא",
+    "field-gender_hint": "עם איזו זהות מגדרית תרצה להזדהות באפליקציה?",
+    "field-orientation_hint": "כללנו את הנטיות שראינו כרלוונטיות ביותר בהקשר של הורות משותפת, נשמח לשמוע אם לדעתך פספסנו משהו חשוב אנחנו מזמינים אותך לכתוב לנו בקישור הנ'ל.",
+    "field-gender_hint-ok": "בסדר",
+    "field-country_code": "קוד",
+    "field-privacy": "מידע זה לא יוצג למשתמשים אחרים",
+
+    "date-from": "ממי",
+    "date-to": "למי",
+
+
+
+    "chat_title": "צ'אט",
+    "chat_matched": "הייתה התאמה לפני {ימים}",
+    "chat_report": "דווח התנהגות לא ראויה",
+    "chat_report-reason": "סיבה",
+    "chat_report-description": "תיאור",
+    "chat_report-btn": "תלונה",
+
+
+
+    "settings_title": "הגדרות",
+
+
+    
+
+    "image_input-drop": "גרור תמונה לפה",
+    "ewfwefwef": "wefwef3"
+}

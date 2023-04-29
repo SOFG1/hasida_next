@@ -1,0 +1,149 @@
+{
+    "sign-in_title": "Welcome",
+    "sign-in_desc": "Our mission is to help people to find a person for co-parenting",
+    "sign-in_email-label": "E-mail",
+    "sign-in_pass-label": "Password",
+    "sign-in_sign-in": "Sign in",
+    "sign-in_no-account": "Don’t have an account?",
+    "sign-in_sign-up": "Sign up",
+    "sign-in_forgot-pass": "Forgot password",
+    "sign-in_quick": "or quick sign in",
+    "forgot-pass_title": "Did you forgot your password?",
+    "forgot-pass_text": "Enter your e-mail address",
+    "forgot-pass_btn": "Apply",
+    "forgot-pass_success": "Password has been sent to your email",
+    "forgot-pass_error": "Error occurred",
+
+
+
+    "sign-up_title": "Sign up",
+    "sign-up_progress": "Progress",
+    "sign-up_step1": "Step 1",
+    "sign-up_step1-alert": "Welcome to nesting! Sign up now. It will only take a minute and will enable you to have a quick look at the other users",
+    "sign-up_step2": "Step 2",
+    "sign-up_step3": "Step 3",
+    "sign-up_email-label": "E-mail",
+    "sign-up_pass-label": "Password",
+    "sign-up_pass-rpt-label": "Repeat password",
+    "sign-up_phone-label": "Mobile phone",
+    "sign-up_next": "Next step",
+    "sign-up_have-acc": "Do you have an account?",
+    "sign-up_sign-in": "Sign in",
+    "sign-up_warning": "This app is designated for finding a partner for Co-parenting by choice. A model that allows aspiring parents to team up for the purpose of raising children in separate households, free from romantic involvement. Any other use might result in suspension.",
+    "sign-up_warning-submit": "Submit",
+    "sign-up_email-confirm": "Confirmation message has been sent to your email address",
+    "sign-up_email-success": "Thank you! Your registration is approved",
+    "sign-up_email-error": "Error occurred while sending email confirmation",
+
+
+
+    "sign-up2_suggestion": "Would you like to complete your profile now?",
+    "sign-up2_suggestion-text": "It will only take 5-10 minutes",
+    "sign-up2_suggestion-yes": "Yes",
+    "sign-up2_suggestion-no": "No, I will complete it later",
+    "sign-up2_suggestion-next": "Next step",
+    "sign-up2_subtitle": "Basic information",
+    "sign-up2_images-label": "You can upload up to 4 photos",
+    "sign-up2_privacy": "I accept the <span>Privacy policy</span> of Nesting",
+
+    "menu_dashboard": "Dashboard",
+    "menu_settings": "Settings",
+    "menu_home": "Home",
+    "menu_account": "Account",
+    "menu_chat": "Chat",
+
+    "filters_title": "Filters",
+    "filters_apply": "Apply",
+
+
+    "account_title": "Profile",
+    "account_logout": "Log out",
+    "account_add-photo": "Add photo",
+    "account_add-photo-more": "Add up to 4 photos to your profile",
+    "account_info-percent": "% information added",
+    "account_info-save": "Save",
+    "account_info-edit": "Edit",
+    "account_column1": "Technical information:",
+    "account_column2": "Personal interests:",
+    "account_column3": "Personal information:",
+    "account_membership": "Membership:",
+    "account_membership-silver": "SILVER",
+    "account_membership-gold": "GOLD",
+    "account_membership-platinum": "PLATINUM",
+    "account_membership-upgrade": "Upgrade",
+    "upgrade_membership": "Membership:",
+    "upgrade_title": "Upgrade",
+    "upgrade_text": "Upgrade your membership to get more features",
+    "upgrade_upgrade-btn": "Upgrade",
+
+
+    "like-match_title": "Wow! It’s a match",
+    "like-match_text": "You can write a message to the person or continue looking",
+    "like-match_btn": "Write a message",
+    "like-match_continue": "Continue",
+
+
+    "dashboard_title": "Dashboard",
+    "dashboard_period": "Period:",
+    "dashboard_selected-period": "the last {{days}} days",
+    "dashboard_search": "Show in search",
+    "dashboard_activity": "My activity",
+    "dashboard_searches": "Searches:",
+    "dashboard_likes": "I liked:",
+    "dashboard_i-saw": "I viewed:",
+    "dashboard_liked_me": "Who liked me",
+    "dashboard_viewers": "Who viewed my profile (but didn’t like)",
+    "dashboard_i_liked": "Who I liked",
+    "dashboard_likes_matches": "Matches",
+    "dashboard_i_viewer": "Who I viewed",
+    "dashboard_all": "All",
+    "dashboard_open": "Open",
+    "dashboard_write": "Write",
+    "dashboard_days": "days",
+
+    "home_no-items-title": "Oops... We did not find anyone near you",
+    "home_no-items-text": " Hi! There are still no people near you. But you can change your area in the filters",
+    "home_no-items-btn": "Filter",
+    
+
+
+    "height-inch": "Inch",
+    "height-cm": "CM",
+
+    
+
+    "field-email": "E-mail",
+    "field-yes": "Yes",
+    "field-no": "No",
+    "field-gender_hint": "What gender identity do you prefer to be presented as?",
+    "field-orientation_hint": "We have collectively noted the tendencies that we found to be highly relevant in the context of co-parenting. We would be pleased to hear if you believe that we have overlooked anything important. We invite you to write to us using the aforementioned link.",
+    "field-gender_hint-ok": "OK",
+    "field-country_code": "Dialing code",
+    "field-privacy": "This information will not be shown to other users",
+
+    "date-from": "From",
+    "date-to": "To",
+
+
+
+
+    "chat_title": "Chat",
+    "chat_matched": "You matched {{days}} ago",
+    "chat_report": "Report about abuse",
+    "chat_report-reason": "Reason",
+    "chat_report-description": "Description",
+    "chat_report-btn": "Complain",
+
+
+
+    "settings_title": "Settings",
+
+
+
+
+
+    
+
+    "image_input-drop": "Drop images here:",
+    "ewfwefwef": "wefwef3"
+}
