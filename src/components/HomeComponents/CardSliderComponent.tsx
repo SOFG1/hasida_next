@@ -67,7 +67,7 @@ const CardSliderComponent = React.memo(({ opened, photos }: IProps) => {
         {photos?.map((p) => {
           return (
             <SwiperSlide key={p.id}>
-              <StyledImg src={`${hostUrl}${p.url}`} alt="iuser photo" />
+              <StyledImg src={`${hostUrl}${p.url}`} alt="iuser photo" layout="fill"  />
             </SwiperSlide>
           );
         })}

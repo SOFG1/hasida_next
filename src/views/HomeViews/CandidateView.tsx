@@ -157,7 +157,7 @@ const StyledLoader = styled(Loader)`
 const registered = true;
 
 interface IProps {
-  userId: number
+  userId?: number
 }
 
 const CandidateView = React.memo(({userId}: IProps) => {
