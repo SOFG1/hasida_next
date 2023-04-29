@@ -14,7 +14,7 @@ const StyledTitle = styled.p`
 const SettingsItemComponent = React.memo(() => {
   return (
     <StyledWrapper>
-      <StyledTitle>Don't show me to:</StyledTitle>
+      <StyledTitle>Don&apos;t show me to:</StyledTitle>
     </StyledWrapper>
   );
 });
