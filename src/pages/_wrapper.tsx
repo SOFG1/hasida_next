@@ -49,11 +49,13 @@ const AppWrapper = ({ children }: IProps) => {
   const token = useSelector(userTokenSelector);
   const [setGeoLocation] = useUserSetGeoLocationMutation();
 
+  console.log(router.asPath)
+
   const showMenu = useMemo(() => {
     return (
-      !router.pathname.match("/sign-in") && !router.pathname.match("/sign-up")
+      !router.asPath.match("/sign-in") && !router.asPath.match("/sign-up")
     );
-  }, [router.pathname]);
+  }, [router.asPath]);
 
   //Update queries to get data in selected language
   useEffect(() => {
@@ -69,10 +71,10 @@ const AppWrapper = ({ children }: IProps) => {
 
   //navigate to main
   useEffect(() => {
-    if (router.pathname === "/") {
+    if (router.asPath === "/") {
       router.push("/home");
     }
-  }, [router.pathname]);
+  }, [router.asPath]);
 
   //Ask geolocation
   useEffect(() => {
@@ -89,7 +91,7 @@ const AppWrapper = ({ children }: IProps) => {
 
   //Show email confirmation
   useEffect(() => {
-    if (router.pathname === "/popup") {
+    if (router.asPath === "/popup") {
       const success = search.match("success=true");
       if (success) {
         dispatch(
@@ -102,7 +104,21 @@ const AppWrapper = ({ children }: IProps) => {
       }
       router.push("/account");
     }
-  }, [router.pathname, search, t]);
+  }, [router.asPath, search, t]);
+
+
+  useEffect(() => {
+    if (!token && router.asPath !== "/sign-in" && router.asPath !== "/sign-up") {
+        router.push('/sign-in')
+      }
+  }, [router.asPath, token])
+
+  useEffect(() => {
+    if (token && router.asPath === "/sign-in") {
+        router.push('/home')
+      }
+  }, [router.asPath, token])
+
 
   return (
     <Wrapper>
