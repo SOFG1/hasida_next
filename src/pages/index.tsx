@@ -1,3 +1,4 @@
+import { Loader } from "@/UI/Loader";
 import Head from "next/head";
 
 
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main>
-        <div>wfefewfew</div>
+        <Loader />
       </main>
     </>
   );

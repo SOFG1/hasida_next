@@ -39,7 +39,6 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const search = "success=tru";
 
 const AppWrapper = ({ children }: IProps) => {
   const dispatch = useDispatch();
@@ -49,7 +48,7 @@ const AppWrapper = ({ children }: IProps) => {
   const token = useSelector(userTokenSelector);
   const [setGeoLocation] = useUserSetGeoLocationMutation();
 
-  console.log(router.asPath)
+  console.log(router)
 
   const showMenu = useMemo(() => {
     return (
@@ -92,19 +91,19 @@ const AppWrapper = ({ children }: IProps) => {
   //Show email confirmation
   useEffect(() => {
     if (router.asPath === "/popup") {
-      const success = search.match("success=true");
+      const success = router.asPath.match("success=true");
       if (success) {
         dispatch(
           setAlert({ isError: false, text: t("sign-up_email-success") })
         );
       }
-      const error = search.match("success=false");
+      const error = router.asPath.match("success=false");
       if (error) {
         dispatch(setAlert({ isError: true, text: t("sign-up_email-error") }));
       }
       router.push("/account");
     }
-  }, [router.asPath, search, t]);
+  }, [router.asPath, t]);
 
 
   useEffect(() => {
