@@ -1,5 +1,4 @@
 import { fetchBaseQuery } from "@reduxjs/toolkit/dist/query";
-import axios, {AxiosInstance} from 'axios'
 import { RootStateType } from "../store/store";
 
 export const hostUrl = 'https://www.nestingmatch.com'
@@ -26,12 +25,6 @@ export const baseQuery = fetchBaseQuery({
       return headers;
     },
   });
-
-
-//Axios instance
-export const axiosInstance: AxiosInstance = axios.create({
-  baseURL: `${baseUrl}/`,
-});
 
 
 

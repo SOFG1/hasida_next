@@ -1,7 +1,6 @@
 import { createApi } from "@reduxjs/toolkit/dist/query/react";
-import { axiosInstance, baseQuery } from ".";
+import { baseQuery } from ".";
 import { UserPhotoType } from "./user";
-import { convertFiltersData } from "../utils";
 
 const emptyApi = createApi({
   reducerPath: "homeApi",
