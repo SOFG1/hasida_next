@@ -1,21 +1,25 @@
 import { createApi } from "@reduxjs/toolkit/dist/query/react";
 import { baseQuery } from ".";
 import { IProfile } from "./home";
-
+import { HYDRATE } from "next-redux-wrapper";
 
 const emptyApi = createApi({
   reducerPath: "dashboardApi",
-  tagTypes: ['Dashboard'],
+  tagTypes: ["Dashboard"],
   baseQuery,
+  extractRehydrationInfo(action, { reducerPath }) {
+    if (action.type === HYDRATE) {
+      return action.payload[reducerPath];
+    }
+  },
   endpoints: () => ({}),
-})
-
+});
 
 export const dashboardApi = emptyApi.injectEndpoints({
   endpoints: (builder) => {
     return {
       getDashboard: builder.query<IDashboard, number>({
-        providesTags: ['Dashboard'],
+        providesTags: ["Dashboard"],
         query: (days) => {
           return {
             url: "user/dashboard/",
@@ -28,7 +32,6 @@ export const dashboardApi = emptyApi.injectEndpoints({
 });
 
 export const { useGetDashboardQuery } = dashboardApi;
-
 
 export interface IDashboard {
   activity: {

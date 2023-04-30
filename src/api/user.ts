@@ -1,11 +1,17 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { baseQuery, baseUrl } from ".";
+import { HYDRATE } from "next-redux-wrapper";
 
 
 const emptyApi = createApi({
   reducerPath: "userApi",
   baseQuery,
   tagTypes: ["User", "Fields", "FieldOptions"],
+  extractRehydrationInfo(action, { reducerPath }) {
+    if (action.type === HYDRATE) {
+      return action.payload[reducerPath]
+    }
+  },
   endpoints: () => ({}),
 })
 

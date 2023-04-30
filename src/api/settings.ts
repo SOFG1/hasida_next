@@ -1,9 +1,15 @@
 import { createApi } from "@reduxjs/toolkit/dist/query/react";
 import { baseQuery } from ".";
+import { HYDRATE } from "next-redux-wrapper";
 
 const emptyApi = createApi({
   reducerPath: "settingsApi",
   baseQuery,
+  extractRehydrationInfo(action, { reducerPath }) {
+    if (action.type === HYDRATE) {
+      return action.payload[reducerPath]
+    }
+  },
   endpoints: () => ({}),
 });
 
