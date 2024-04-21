@@ -8,7 +8,7 @@ import CandidateCard from "./CandidateCard";
 import { useTranslation } from "react-i18next";
 import { useLazyProfilesListQuery } from "../../api/home";
 import { convertFiltersData } from "../../utils";  
- 
+  
 const StyledLoader = styled(Loader)` 
   width: 100%;
 `;
