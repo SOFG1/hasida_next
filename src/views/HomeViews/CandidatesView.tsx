@@ -16,7 +16,7 @@ const StyledLoader = styled(Loader)`
 const CandidatesView = React.memo(() => {
   const appliedFilters = useSelector(homeAppliedFiltersSelector);
   const { i18n } = useTranslation();
-  const [fetchProfiles, { data, isFetching, currentData }] =
+  const [fetchProfiles, { data, isFetching }] =
     useLazyProfilesListQuery();
 
   const handleFetch = useCallback(
