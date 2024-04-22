@@ -10,7 +10,7 @@ import { useLazyProfilesListQuery } from "../../api/home";
 import { convertFiltersData } from "../../utils";  
                
 const StyledLoader = styled(Loader)`  
-  width: 100%; 
+  width: 100%;  
 `; 
   
 const CandidatesView = React.memo(() => {
