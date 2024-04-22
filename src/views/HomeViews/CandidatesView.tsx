@@ -12,7 +12,7 @@ import { convertFiltersData } from "../../utils";
 const StyledLoader = styled(Loader)`  
   width: 100%;
 `; 
- 
+  
 const CandidatesView = React.memo(() => {
   const appliedFilters = useSelector(homeAppliedFiltersSelector);
   const { i18n } = useTranslation();
