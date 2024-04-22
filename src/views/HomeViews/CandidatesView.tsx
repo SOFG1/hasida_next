@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { homeAppliedFiltersSelector } from "../../store/home";
 import { Loader } from "../../UI/Loader";
 import CandidateCard from "./CandidateCard";
-import { useTranslation } from "react-i18next"; 
+import { useTranslation } from "react-i18next";  
 import { useLazyProfilesListQuery } from "../../api/home";
 import { convertFiltersData } from "../../utils";  
                 
