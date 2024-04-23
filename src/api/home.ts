@@ -101,7 +101,7 @@ export const homeApi = emptyApi.injectEndpoints({
   }, 
 });
 
-export const {
+export const { 
   useLazyProfilesListQuery,
   useProfileDetailsQuery,
   useProfileLikeMutation,
