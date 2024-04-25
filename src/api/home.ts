@@ -95,7 +95,7 @@ export const homeApi = emptyApi.injectEndpoints({
             url: `home/profile_hide/${id}/`,
             method: "POST", 
           }; 
-        },   
+        },    
       }),    
     };        
   },           
