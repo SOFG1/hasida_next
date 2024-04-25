@@ -93,7 +93,7 @@ export const homeApi = emptyApi.injectEndpoints({
         query: (id) => { 
           return {
             url: `home/profile_hide/${id}/`,
-            method: "POST",
+            method: "POST", 
           }; 
         },   
       }),  
