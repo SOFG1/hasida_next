@@ -106,7 +106,7 @@ export const {
   useProfileDetailsQuery,  
   useProfileLikeMutation, 
   useProfileHideMutation,
-} = homeApi;
+} = homeApi; 
 
 export interface IProfile {
   age: number;
