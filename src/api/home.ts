@@ -89,7 +89,7 @@ export const homeApi = emptyApi.injectEndpoints({
           return { res, id };
         },
       }),
-      profileHide: builder.mutation<any, number>({
+      profileHide: builder.mutation<any, number>({ 
         query: (id) => { 
           return {
             url: `home/profile_hide/${id}/`,
