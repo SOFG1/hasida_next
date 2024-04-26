@@ -107,7 +107,7 @@ export const {
   useProfileLikeMutation,    
   useProfileHideMutation, 
 } = homeApi; 
- 
+  
 export interface IProfile {
   age: number;
   city: { id: number; name: string } | null;
