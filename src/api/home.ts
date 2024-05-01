@@ -105,7 +105,7 @@ export const {
   useLazyProfilesListQuery,        
   useProfileDetailsQuery,  
   useProfileLikeMutation,    
-  useProfileHideMutation, 
+  useProfileHideMutation,  
 } = homeApi; 
   
 export interface IProfile {
