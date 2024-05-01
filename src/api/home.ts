@@ -102,7 +102,7 @@ export const homeApi = emptyApi.injectEndpoints({
 });                       
          
 export const {      
-  useLazyProfilesListQuery,          
+  useLazyProfilesListQuery,           
   useProfileDetailsQuery,  
   useProfileLikeMutation,    
   useProfileHideMutation,  
