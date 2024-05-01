@@ -96,7 +96,7 @@ export const homeApi = emptyApi.injectEndpoints({
             method: "POST", 
           };        
         },     
-      }),             
+      }),              
     };              
   },                
 });                       
